@@ -1,0 +1,30 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> BOOSTON HOUSE PREDICTION </h1><br>
+        
+        <form method="POST", action="{{url_for('predict_class')}}">
+           <b> CRIM :  <input type="text", name='crim', placeholder="digit"> <br><br>
+            ZN :  <input type="text", name='zn', placeholder="digit"> <br><br>
+            INDUS :  <input type="text", name='indus', placeholder="digit"> <br><br>
+            CHAS :  <input type="text", name='chas', placeholder="digit"> <br><br>
+            NOX :  <input type="text", name='nox', placeholder="digit"> <br><br>
+            RM :  <input type="text", name='rm', placeholder="digit"> <br><br>
+            AGE :  <input type="text", name='age', placeholder="digit"> <br><br>
+            DIS :  <input type="text", name='dis', placeholder="digit"> <br><br>
+            RAD :  <input type="text", name='rad', placeholder="digit"> <br><br>
+            TAX :  <input type="text", name='tax', placeholder="digit"> <br><br>
+            PTRATIO :  <input type="text", name='ptratio', placeholder="digit"> <br><br>
+            B :  <input type="text", name='b', placeholder="digit"> <br><br>
+            LSTAT : <input type="text", name='lstat', placeholder="digit"> <br><br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        <img src='Static\house.jpg' alt="house">
+        
+    </center>
+
+    </body>
+</html>
